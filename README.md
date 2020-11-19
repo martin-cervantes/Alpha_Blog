@@ -56,8 +56,6 @@ run localhost server:
 - Github: [@mcervantes71](https://github.com/mcervantes71)
 - Gmail: [cervantes.martine](mailto:cervantes.martine@gmail.com)
 
-:pencil2: Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
