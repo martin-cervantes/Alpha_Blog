@@ -26,11 +26,10 @@
 
         <div class="form-group row justify-content-center">
           <%= f.submit "Sign up", class: "btn btn-outline-light btn-lg" %>
+
+          <%= link_to 'Cancel', articles_path, class: "btn btn-outline-danger btn-lg ml-3" %>
         </div>
       <% end %>
-    </div>
-    <div class="mb-3">
-      <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
     </div>
   </div>
 </div>
