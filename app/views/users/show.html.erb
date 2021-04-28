@@ -1,8 +1,8 @@
-<p id="notice"><%= notice %></p>
-
 <h1 class="text-center mt-4"><%= @user.username %>'s profile</h1>
 
-<%= link_to 'Edit', edit_user_path(@user), class: "btn btn-outline-primary btn-lg ml-5" %>
+<% if logged_in? && @user == current_user %>
+  <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-outline-primary btn-lg ml-5" %>
+<% end %>
 <%= link_to 'Back', users_path, class: "btn btn-outline-danger btn-lg" %>
 
 <%= gravatar_for @user, size: 200 %>
