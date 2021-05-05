@@ -1,7 +1,9 @@
 <div id="page-content">
   <h1 class="text-center mt-4">Articles</h1>
 
-  <%= link_to 'New Article', new_article_path, class: "btn btn-outline-primary mx-5" %>
+  <% if logged_in? %>
+    <%= link_to 'New Article', new_article_path, class: "btn btn-outline-primary mx-5" %>
+  <% end %>
 
   <%= render 'article' %>
 </div>
