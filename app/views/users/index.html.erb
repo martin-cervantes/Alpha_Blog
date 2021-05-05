@@ -1,6 +1,8 @@
 <h1 class="text-center mt-4">Alpha Bloggers</h1>
 
-<%= link_to 'New User', signup_path, class: "btn btn-outline-primary mx-5" %>
+<% if logged_in? %>
+  <%= link_to 'New User', signup_path, class: "btn btn-outline-primary mx-5" %>
+<% end %>
 
 <div class="container">
   <% @users.each do |user| %>
