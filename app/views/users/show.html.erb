@@ -2,6 +2,7 @@
 
 <% if logged_in? && @user == current_user %>
   <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-outline-primary btn-lg ml-5" %>
+  <%= link_to "Delete profile", user_path(current_user), class: "btn btn-outline-danger btn-lg ml-5", method: :delete, data: { confirm: "Are you sure?" } %> 
 <% end %>
 <%= link_to 'Back', users_path, class: "btn btn-outline-danger btn-lg" %>
 
