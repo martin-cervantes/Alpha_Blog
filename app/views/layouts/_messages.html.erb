@@ -1,18 +1,7 @@
 <div class="container">
-  <% if notice.present? %>
+  <% flash.each do |name, msg| %>
     <div class="alert alert-<%= name == "notice" ? "success" : "danger" %> alert-dismissible fade show" role="alert">
-      <%= notice %>
-
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  <% end %>
-
-  <% if alert.present? %>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-      <%= alert %>
-
+      <%= msg %>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
