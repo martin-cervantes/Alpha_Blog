@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   resources :articles
 
   resources :pages
+
+  resources :categories, except: [:destroy]
 end
